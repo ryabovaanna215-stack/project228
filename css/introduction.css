@@ -1,0 +1,28 @@
+.introduction{
+    background-color: var(--color-green);
+    color: var(--color-white);
+    padding: 60px 13%;
+    text-align: center;
+}
+.title{
+    padding-bottom: 50px;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+}
+.card h3{
+    text-transform: uppercase;
+}
+.card img{
+    height: 50px;
+    object-fit: contain;
+    filter: invert(1);
+}
