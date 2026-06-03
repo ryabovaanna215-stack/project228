@@ -21,9 +21,12 @@ body {
 }
 
 :root {
-    --color-green: #9dba04;
+    --color-green: #041F1E;
     --color-white: #f4f4f4;
     --color-black: #121212;
+    --color-orange: #FF9F1C;
+    --color-blue: #B3CBB9;
+    --color-brown: #684E32;
 }
 
 img {
@@ -34,20 +37,33 @@ img {
 
 p {
     font-size: 15px;
+    font-family: base;
+    color: var(--color-white);
 }
 
 h1 {
     font-size: 55px;
     font-family: header;
+    color: var(--color-white);
 }
 
 h2 {
     font-size: 31px;
     font-family: header;
+    color: var(--color-white);
 }
 
 h3 {
     font-size: 17px;
     font-weight: 400;
+    font-family: header;
+    color: var(--color-white);
+}
+h1, h2, h3{
+    text-transform: uppercase;
+}
+a{
+    text-decoration: none;
+    color: var(--color-white);
     font-family: header;
 }
