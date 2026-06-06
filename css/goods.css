@@ -5,10 +5,9 @@ section.goods{
     align-items: center;
     flex-direction: column;
     background-color: var(--color-blue);
-    padding-top: 80px;
+    padding-top: 80px 0 50px 0;
 }
-section.goods h1{
-    font-size: 35px;
+section.goods h2{
     padding: 20px 0;
 }
 div.slider{
