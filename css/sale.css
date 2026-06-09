@@ -1,0 +1,29 @@
+section.sales{
+    width: 100%;
+    background-image: url(../img/sale.jpg);
+    height: 200px;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #041f1e56;
+    background-blend-mode: darken;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section.sales button{
+    font-family: header;
+    font-size: 20px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    background-color: var(--color-orange);
+    border: 5px solid var(--color-orange);
+    color: var(--color-white);
+    margin: 10px 0;
+}
+section.sales button:hover{
+    background-color: #da8f26;
+    border: 5px solid #da8f26;
+}
