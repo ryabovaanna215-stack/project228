@@ -2,7 +2,7 @@ section.sales{
     width: 100%;
     background-image: url(../img/sale.jpg);
     height: 200px;
-    background-position: top;
+    background-position: center;
     background-size: cover;
     background-attachment: fixed;
     background-color: #041f1e56;

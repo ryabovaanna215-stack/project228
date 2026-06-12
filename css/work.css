@@ -1,0 +1,114 @@
+section.work{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-blue);
+}
+section.work h2{
+    padding: 50px 0;
+}
+div.sections{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+}
+div.sections::before{
+    content: '';
+    position: absolute;
+    left: 320px;
+    top: 20px;
+    bottom: 20px;
+    width: 2px;
+    background-color: var(--color-light_green);
+    z-index: 1;
+}
+div.section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 15px;
+}
+div.section:hover div.information div.step{
+    background-color: var(--color-orange);
+}
+div.section:hover div.information div.info_img img{
+    filter: brightness(1);
+}
+div.information::before{
+    content: '';
+    position: absolute;
+    left: 273px; 
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-white);
+    background-image: url(../img/tent_icon.png);
+    background-size: contain;
+    border-radius: 50%;
+    padding: 4px;
+    z-index: 1;
+}
+div.information::after{
+    content: '';
+    position: absolute;
+    left: 75px; 
+    width: 30%;
+    height: 2px;
+    background-color: var(--color-light_green);
+    border-radius: 50%;
+    z-index: 0;
+}
+div.section:not(:first-child){
+    padding-top: 50px;
+}
+div.step{
+    width: 200px;
+    padding: 10px;
+    background-color: var(--color-green);
+    text-align: center;
+    z-index: 3;
+    transition: all 0.5s ease-in; 
+}
+div.step p{
+    font-size: 20px;
+}
+div.information{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 230px;
+}
+div.info_img img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    filter: brightness(0.6);
+    transition: all 0.5s ease-in; 
+}
+div.info_img{
+    width: 200px;
+    height: 200px;
+    z-index: 3;
+}
+div.text{
+    width: 45%;
+    padding: 0 100px 0 0;
+}
+section.work button{
+    font-family: header;
+    font-size: 20px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    background-color: #503c26;
+    border: 5px solid #503c26;
+    color: var(--color-white);
+    margin: 30px 0;
+}
+section.work button:hover{
+    background-color: #332618;
+    border: 5px solid #332618;
+}
