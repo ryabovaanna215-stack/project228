@@ -17,6 +17,8 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 12px;
+    position: relative;
+    cursor: pointer;
 }
 .card h3{
     text-transform: uppercase;
@@ -25,4 +27,12 @@
     height: 50px;
     object-fit: contain;
     filter: invert(1);
+}
+
+.card_cursor{
+    cursor: pointer;
+}
+
+.card_anim{
+    transition: all 0.4s ease;
 }
