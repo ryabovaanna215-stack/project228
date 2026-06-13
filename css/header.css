@@ -17,7 +17,7 @@ section.header{
     padding: 10px;
     position: fixed;
     top: 0;
-    transition: all 0.5s ease-in; 
+    transition: all 0.3s ease-in; 
     z-index: 5;
     color: white;
 }
@@ -35,7 +35,7 @@ section.welcome_content{
     align-items: center;
 }
 div.inform_wc{
-    width: 800px;
+    width: 500px;
 }
 div.inform_wc h1{
     text-transform: uppercase;

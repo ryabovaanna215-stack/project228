@@ -69,3 +69,6 @@ a{
     color: var(--color-white);
     font-family: header;
 }
+button{
+    transition: all 0.3s linear;
+}
