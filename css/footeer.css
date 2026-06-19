@@ -15,3 +15,132 @@ div.footer2{
     color: var(--color-white);
     text-align: center;
 }
+
+
+div.elevator{
+    background-image: url(../img/arrow.png);
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    left: 50px;
+    bottom: 50px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--color-orange);
+}
+
+div.connect{
+    background-image: url(../img/connect.png);
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--color-grey);
+}
+div.connect_form{
+    display: none;
+}
+#form_active.connect_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: fixed;
+    z-index: 5;
+    top: 100px;
+    right: 50px;
+    width: 400px;
+}
+div.close{
+    background-image: url(../img/delete.png);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    right: 0;
+    top: 0;
+    background-size: cover;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+div.connect_form div.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div.connect_form button{
+    font-family: header;
+    font-size: 20px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    background-color: var(--color-orange);
+    border: 5px solid var(--color-orange);
+    color: var(--color-white);
+    margin: 10px 0;
+}
+div.connect_form button:hover{
+    background-color: #da8f26;
+    border: 5px solid #da8f26;
+}
+div.connect_form p{
+    text-align: center;
+}
+div.connect_form div.form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: right;
+    width: 100%;
+}
+div.connect_form div.form input{
+    margin-top: 20px;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    background-color: transparent;
+    border: solid 2px var(--color-orange);
+    border-radius: 15px;
+    outline: none;
+    box-shadow: none;
+    color: var(--color-white);
+}
+
+
+/* Убираем стрелочки у input number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Сбрасываем базовые настройки автозаполнения формы */
+div.connect_form div.form input:-webkit-autofill,
+div.connect_form div.form input:-webkit-autofill:hover, 
+div.connect_form div.form input:-webkit-autofill:focus {
+    -webkit-text-fill-color: white !important; /*смена цвета текста*/
+    
+    box-shadow: 0 0 0px 1000px var(--color-orange) inset !important;
+    -webkit-box-shadow: 0 0 0px 1000px var(--color-orange) inset !important; /*смена цвета автозаполения блока*/
+}
+
+div.connect_form div.form input::placeholder{
+    color: var(--color-white);
+}
+.bg_shadow::before{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 4;
+    pointer-events: all;
+    position: fixed;
+}
+.bg_position{
+    overflow: hidden;
+}

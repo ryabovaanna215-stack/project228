@@ -22,6 +22,7 @@ card.forEach(card => {
 container_cards.addEventListener("dragover", (event) => {  
     const currentCard = event.target.closest('.card');
     if (currentCard && currentCard !== draggedCard) {
+        
         const currentComputedStyle = window.getComputedStyle(currentCard);
         const currentOrder = parseInt(currentComputedStyle.order)
         
