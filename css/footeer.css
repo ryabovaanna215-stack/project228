@@ -1,0 +1,17 @@
+footer{
+    width: 100%;
+}
+div.footer1{
+    padding: 20px 0;
+    background-color: var(--color-blue);
+    font-family: header;
+    color: var(--color-white);
+    text-align: center;
+}
+div.footer2{
+    padding: 20px 0;
+    font-family: header;
+    background-color: var(--color-green);
+    color: var(--color-white);
+    text-align: center;
+}

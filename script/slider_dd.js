@@ -1,6 +1,5 @@
 const container_cards = document.querySelector(".cards");
 const card = document.querySelectorAll('.card');
-console.log('Найденные элементы:', card);
 
 let draggedCard;
 let startOrder = 1; 
